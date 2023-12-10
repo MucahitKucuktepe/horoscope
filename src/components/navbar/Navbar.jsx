@@ -1,16 +1,29 @@
-import logo from "../../helper/logo.png"
+import logo from "../../helper/logo.png";
+import "../../scss/navbar.scss";
 
 const Navbar = () => {
   return (
-    <section>
-      <a href="#Horoscope">Horoscope</a>
-      <a href="#Daily">Daily</a>
-      <a href="#Tarot">Tarot</a>
-      <a href="#Article">Article</a>
-      <a href="#Contact">Contact</a>
+    <section className="nav_bar">
       <div>
-        <img src={logo} alt="" width={"50px"}/>
+        <ul>
+          <li>
+            <a href="#Horoscope">Horoscope</a>
+          </li>
+          <li>
+            <a href="#Daily">Daily</a>
+          </li>
+          <li>
+            <a href="#Tarot">Tarot</a>
+          </li>
+          <li>
+            <a href="#Article">Article</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact</a>
+          </li>
+        </ul>
       </div>
+      <img src={logo} alt="" width={"50px"} />
     </section>
   );
 };
