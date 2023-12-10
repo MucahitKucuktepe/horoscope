@@ -1,0 +1,92 @@
+@import "../scss/variables";
+
+.card {
+  border: 2px solid red;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .title {
+    position: absolute;
+    top: 0;
+    color: rgb(202, 115, 8);
+    font-size: 2rem;
+    font-family: $fontFamily;
+    z-index: 2;
+  }
+  .date {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(145, 202, 162);
+    font-size: 1.5rem;
+    font-family: $fontFamily;
+    z-index: 2;
+  }
+
+  .desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.559);
+    font-size: 1rem;
+    font-family: $fontFamily;
+    z-index: 3;
+    transform: translateY(100%);
+    transition: transform 2s ease-in-out;
+    height: 100%;
+    overflow: auto;
+  }
+
+  &:hover {
+    .desc{
+         transform: translateY(0%);
+    }
+    cursor: pointer;
+    img{
+        display: none;
+        transition: transform 2s ease-in-out;
+    }
+   
+  }
+  .desc::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card:hover{
+    img{
+        filter: none;
+    }
+  }
+
+  //   .desc {
+  //     width: 100%;
+  //     position: absolute;
+  //     bottom: 0;
+  //     left: 0;
+  //     font-size: 0.5rem;
+  //     transform: translateY(100%);
+  //     transition: transform 0.7s ease-in-out;
+  //     z-index: 3;
+  //     height: 25%;
+  //     text-align: center;
+  //     overflow: auto;
+  //   }
+  //   .desc:hover {
+  //     cursor: pointer;
+  //     transform: translateY(0%);
+  //   }
+  //   .desc:hover img {
+  //     filter: none;
+  //   }
+  //   .desc::-webkit-scrollbar {
+  //     display: none;
+  //   }
+}
