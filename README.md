@@ -1,5 +1,4 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
+<img src="./public/assets/app_gallery.gif">
 
 # Project-001 : Horoscope App (RP-01)
 
@@ -41,11 +40,6 @@ SOLUTION
 ├── package.json
 └── yarn.lock
 ```
-
-## Expected Outcome
-
-https://horoscope-ten.vercel.app/
-
 ## Objective
 
 Build a Horoscope App using ReactJS.
@@ -76,8 +70,3 @@ Build a Horoscope App using ReactJS.
 
 - Step 5: Add project gif to your project and README.md file.
 
-## Notes
-
-- You can add additional functionalities to your app.
-
-**<p align="center">&#9786; Happy Coding &#9997;</p>**
